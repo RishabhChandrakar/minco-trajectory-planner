@@ -1,0 +1,64 @@
+In file included from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/corridor_builder.hpp:10[m[K,
+                 from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:28[m[K:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:[m[K In member function ‘[01m[Kvoid polyhedronGenerator::paramSet(bool, bool, bool, const int&, const int&, double, double, double)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:131:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis_gpu_on_stage_1[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |     void paramSet([01;35m[Kbool is_gpu_on_stage_1[m[K, bool is_gpu_on_stage_2, bool is_cluster_on,
+      |                   [01;35m[K~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:131:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kis_gpu_on_stage_2[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  131 |     void paramSet(bool is_gpu_on_stage_1, [01;35m[Kbool is_gpu_on_stage_2[m[K, bool is_cluster_on,
+      |                                           [01;35m[K~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:[m[K In member function ‘[01m[Kbool polyhedronGenerator::serialConvexTest2D(int, int, int, int, const MatrixXi&, const MatrixXi&, const MatrixXi&)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:299:55:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmax_y_id[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  299 |                             int cluster_grid_num, [01;35m[Kint max_y_id[m[K,
+      |                                                   [01;35m[K~~~~^~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:[m[K In member function ‘[01m[Kvoid polyhedronGenerator::polygonGeneration(std::vector<int>&, std::vector<int>&)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:589:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  589 |             for (int i = 0; [01;35m[Ki < rect_grid_x.size()[m[K; ++i) {
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:608:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<int>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  608 |         for (int i = 0; [01;35m[Ki < rect_grid_x.size()[m[K; ++i) {
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:[m[K In member function ‘[01m[Kvoid polyhedronGenerator::printVertexIdx(const VectorXi&, const string&)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:1050:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvertex_idx[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1050 |     void printVertexIdx([01;35m[Kconst VectorXi& vertex_idx[m[K, const string& name) {
+      |                         [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:1050:67:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+ 1050 |     void printVertexIdx(const VectorXi& vertex_idx, [01;35m[Kconst string& name[m[K) {
+      |                                                     [01;35m[K~~~~~~~~~~~~~~^~~~[m[K
+In file included from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/corridor_builder.hpp:11[m[K,
+                 from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:28[m[K:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:[m[K In member function ‘[01m[Kstd::vector<Vec2> HStarPlanner::search(int, int, double, int, int, double, int)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:115:48:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kgheading[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  115 |                         int gx, int gy, [01;35m[Kdouble gheading = 0.0[m[K,
+      |                                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:[m[K In member function ‘[01m[Kvoid HStarPlanner::initNodes()[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:254:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ki[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  254 |         size_t [01;35m[Ki[m[K = 0;
+      |                [01;35m[K^[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:[m[K In member function ‘[01m[Kvoid HStarPlanner::cleanup()[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:342:9:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+  342 |         [01;35m[Kif[m[K(occupancy) delete[] occupancy; occupancy = nullptr;
+      |         [01;35m[K^~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:342:43:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  342 |         if(occupancy) delete[] occupancy; [01;36m[Koccupancy[m[K = nullptr;
+      |                                           [01;36m[K^~~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:343:9:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K-Wmisleading-indentation[m[K]
+  343 |         [01;35m[Kif[m[K(nodes) delete[] nodes; nodes = nullptr;
+      |         [01;35m[K^~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:343:35:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  343 |         if(nodes) delete[] nodes; [01;36m[Knodes[m[K = nullptr;
+      |                                   [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/geo_utils.hpp:29[m[K,
+                 from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/gcopter.hpp:31[m[K,
+                 from [01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:33[m[K:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:[m[K In function ‘[01m[Kint sdlp::linfracprog(const double*, int, int, const double*, const double*, double*, double*, int*, int*) [with int d = 1][m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:666:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmax_size[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  666 |                               [01;35m[Kconst int max_size[m[K,
+      |                               [01;35m[K~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:671:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kwork[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  671 |                               [01;35m[Kdouble *work[m[K,
+      |                               [01;35m[K~~~~~~~~^~~~[m[K
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:[m[K In member function ‘[01m[Kvoid IntegratedMappingSFCGCOPTER::save_traj(const Trajectory<3>&)[m[K’:
+[01m[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:961:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktraj[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  961 |   void save_traj([01;35m[Kconst Trajectory<3> &traj[m[K) {
+      |                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K

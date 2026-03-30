@@ -1,0 +1,544 @@
+[0.000000] (-) TimerEvent: {}
+[0.000200] (planner) JobQueued: {'identifier': 'planner', 'dependencies': OrderedDict()}
+[0.000605] (planner) JobStarted: {'identifier': 'planner'}
+[0.008623] (planner) JobProgress: {'identifier': 'planner', 'progress': 'cmake'}
+[0.009141] (planner) Command: {'cmd': ['/usr/bin/cmake', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner', '-DCMAKE_INSTALL_PREFIX=/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner'], 'cwd': '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'rishabh'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rishabh'), ('OLDPWD', '/home/rishabh/Robotics/Aerial-Robotics'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2900'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rishabh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rishabh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/lib/ccache:/home/rishabh/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/rishabh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:@/tmp/.ICE-unix/2865,unix/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:/tmp/.ICE-unix/2865'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da6c3e71_f489_42a8_adc1_ed49f49636ab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099975] (-) TimerEvent: {}
+[0.146919] (planner) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200113] (-) TimerEvent: {}
+[0.259019] (planner) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.276694] (planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300239] (-) TimerEvent: {}
+[0.350103] (planner) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.356415] (planner) StdoutLine: {'line': b'-- Check for working C compiler: /usr/lib/ccache/cc - skipped\n'}
+[0.356576] (planner) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.357325] (planner) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.359609] (planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400370] (-) TimerEvent: {}
+[0.433401] (planner) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.440509] (planner) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/lib/ccache/c++ - skipped\n'}
+[0.440815] (planner) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.441246] (planner) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.445927] (planner) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500462] (-) TimerEvent: {}
+[0.600648] (-) TimerEvent: {}
+[0.700829] (-) TimerEvent: {}
+[0.716930] (planner) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.792472] (planner) StdoutLine: {'line': b'-- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.800908] (-) TimerEvent: {}
+[0.834664] (planner) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.839248] (planner) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.846312] (planner) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.857511] (planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.869105] (planner) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.899308] (planner) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.900956] (-) TimerEvent: {}
+[0.901092] (planner) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.991337] (planner) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.001037] (-) TimerEvent: {}
+[1.027023] (planner) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.057272] (planner) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.063699] (planner) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.101162] (-) TimerEvent: {}
+[1.160904] (planner) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.161188] (planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.201281] (-) TimerEvent: {}
+[1.264444] (planner) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.265871] (planner) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.301382] (-) TimerEvent: {}
+[1.301962] (planner) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.324496] (planner) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.341741] (planner) StdoutLine: {'line': b'-- Found mavros_msgs: 2.14.0 (/opt/ros/humble/share/mavros_msgs/cmake)\n'}
+[1.401511] (-) TimerEvent: {}
+[1.444402] (planner) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.451653] (planner) StdoutLine: {'line': b'-- Generating done\n'}
+[1.454258] (planner) StdoutLine: {'line': b'-- Build files have been written to: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner\n'}
+[1.460521] (planner) CommandEnded: {'returncode': 0}
+[1.461804] (planner) JobProgress: {'identifier': 'planner', 'progress': 'build'}
+[1.461822] (planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner', '--', '-j20', '-l20'], 'cwd': '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'rishabh'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rishabh'), ('OLDPWD', '/home/rishabh/Robotics/Aerial-Robotics'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2900'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rishabh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rishabh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/lib/ccache:/home/rishabh/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/rishabh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:@/tmp/.ICE-unix/2865,unix/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:/tmp/.ICE-unix/2865'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da6c3e71_f489_42a8_adc1_ed49f49636ab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.501619] (-) TimerEvent: {}
+[1.508499] (planner) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/integrated_drone_mapping_node_with_drone_tracking.dir/src/integrated_drone_mapping_node_with_drone_tracking.cpp.o\x1b[0m\n'}
+[1.601744] (-) TimerEvent: {}
+[1.701971] (-) TimerEvent: {}
+[1.802289] (-) TimerEvent: {}
+[1.902547] (-) TimerEvent: {}
+[2.002812] (-) TimerEvent: {}
+[2.103075] (-) TimerEvent: {}
+[2.203308] (-) TimerEvent: {}
+[2.303556] (-) TimerEvent: {}
+[2.403792] (-) TimerEvent: {}
+[2.503954] (-) TimerEvent: {}
+[2.604135] (-) TimerEvent: {}
+[2.704315] (-) TimerEvent: {}
+[2.804511] (-) TimerEvent: {}
+[2.904695] (-) TimerEvent: {}
+[3.004868] (-) TimerEvent: {}
+[3.105035] (-) TimerEvent: {}
+[3.205238] (-) TimerEvent: {}
+[3.305422] (-) TimerEvent: {}
+[3.405610] (-) TimerEvent: {}
+[3.505788] (-) TimerEvent: {}
+[3.605950] (-) TimerEvent: {}
+[3.706126] (-) TimerEvent: {}
+[3.806331] (-) TimerEvent: {}
+[3.906511] (-) TimerEvent: {}
+[4.006670] (-) TimerEvent: {}
+[4.106842] (-) TimerEvent: {}
+[4.207006] (-) TimerEvent: {}
+[4.307201] (-) TimerEvent: {}
+[4.407595] (-) TimerEvent: {}
+[4.507862] (-) TimerEvent: {}
+[4.608109] (-) TimerEvent: {}
+[4.708356] (-) TimerEvent: {}
+[4.808659] (-) TimerEvent: {}
+[4.908954] (-) TimerEvent: {}
+[5.009198] (-) TimerEvent: {}
+[5.109448] (-) TimerEvent: {}
+[5.209789] (-) TimerEvent: {}
+[5.310052] (-) TimerEvent: {}
+[5.410349] (-) TimerEvent: {}
+[5.510670] (-) TimerEvent: {}
+[5.610931] (-) TimerEvent: {}
+[5.711205] (-) TimerEvent: {}
+[5.811540] (-) TimerEvent: {}
+[5.911822] (-) TimerEvent: {}
+[6.012057] (-) TimerEvent: {}
+[6.112341] (-) TimerEvent: {}
+[6.212677] (-) TimerEvent: {}
+[6.312927] (-) TimerEvent: {}
+[6.413198] (-) TimerEvent: {}
+[6.513471] (-) TimerEvent: {}
+[6.613770] (-) TimerEvent: {}
+[6.713999] (-) TimerEvent: {}
+[6.814268] (-) TimerEvent: {}
+[6.914616] (-) TimerEvent: {}
+[7.014863] (-) TimerEvent: {}
+[7.115093] (-) TimerEvent: {}
+[7.215448] (-) TimerEvent: {}
+[7.315734] (-) TimerEvent: {}
+[7.415967] (-) TimerEvent: {}
+[7.516236] (-) TimerEvent: {}
+[7.616492] (-) TimerEvent: {}
+[7.716778] (-) TimerEvent: {}
+[7.817011] (-) TimerEvent: {}
+[7.917288] (-) TimerEvent: {}
+[8.017511] (-) TimerEvent: {}
+[8.117745] (-) TimerEvent: {}
+[8.217982] (-) TimerEvent: {}
+[8.318266] (-) TimerEvent: {}
+[8.418543] (-) TimerEvent: {}
+[8.518805] (-) TimerEvent: {}
+[8.619037] (-) TimerEvent: {}
+[8.719268] (-) TimerEvent: {}
+[8.819560] (-) TimerEvent: {}
+[8.919840] (-) TimerEvent: {}
+[9.020094] (-) TimerEvent: {}
+[9.120424] (-) TimerEvent: {}
+[9.220674] (-) TimerEvent: {}
+[9.320913] (-) TimerEvent: {}
+[9.421141] (-) TimerEvent: {}
+[9.521393] (-) TimerEvent: {}
+[9.621625] (-) TimerEvent: {}
+[9.721863] (-) TimerEvent: {}
+[9.822100] (-) TimerEvent: {}
+[9.922356] (-) TimerEvent: {}
+[10.022754] (-) TimerEvent: {}
+[10.123421] (-) TimerEvent: {}
+[10.223824] (-) TimerEvent: {}
+[10.324101] (-) TimerEvent: {}
+[10.424404] (-) TimerEvent: {}
+[10.524802] (-) TimerEvent: {}
+[10.625076] (-) TimerEvent: {}
+[10.725397] (-) TimerEvent: {}
+[10.825689] (-) TimerEvent: {}
+[10.925960] (-) TimerEvent: {}
+[11.026264] (-) TimerEvent: {}
+[11.126546] (-) TimerEvent: {}
+[11.226870] (-) TimerEvent: {}
+[11.327167] (-) TimerEvent: {}
+[11.427470] (-) TimerEvent: {}
+[11.527763] (-) TimerEvent: {}
+[11.628046] (-) TimerEvent: {}
+[11.728351] (-) TimerEvent: {}
+[11.828695] (-) TimerEvent: {}
+[11.929027] (-) TimerEvent: {}
+[12.029312] (-) TimerEvent: {}
+[12.129573] (-) TimerEvent: {}
+[12.229855] (-) TimerEvent: {}
+[12.330076] (-) TimerEvent: {}
+[12.430476] (-) TimerEvent: {}
+[12.530812] (-) TimerEvent: {}
+[12.631070] (-) TimerEvent: {}
+[12.731391] (-) TimerEvent: {}
+[12.831705] (-) TimerEvent: {}
+[12.931973] (-) TimerEvent: {}
+[13.032279] (-) TimerEvent: {}
+[13.132606] (-) TimerEvent: {}
+[13.232880] (-) TimerEvent: {}
+[13.333169] (-) TimerEvent: {}
+[13.433475] (-) TimerEvent: {}
+[13.533808] (-) TimerEvent: {}
+[13.634071] (-) TimerEvent: {}
+[13.734379] (-) TimerEvent: {}
+[13.834716] (-) TimerEvent: {}
+[13.935009] (-) TimerEvent: {}
+[14.035276] (-) TimerEvent: {}
+[14.135647] (-) TimerEvent: {}
+[14.235916] (-) TimerEvent: {}
+[14.336228] (-) TimerEvent: {}
+[14.436617] (-) TimerEvent: {}
+[14.536932] (-) TimerEvent: {}
+[14.637249] (-) TimerEvent: {}
+[14.737579] (-) TimerEvent: {}
+[14.837889] (-) TimerEvent: {}
+[14.938222] (-) TimerEvent: {}
+[15.038593] (-) TimerEvent: {}
+[15.138868] (-) TimerEvent: {}
+[15.239116] (-) TimerEvent: {}
+[15.339473] (-) TimerEvent: {}
+[15.439780] (-) TimerEvent: {}
+[15.540013] (-) TimerEvent: {}
+[15.640306] (-) TimerEvent: {}
+[15.740611] (-) TimerEvent: {}
+[15.840881] (-) TimerEvent: {}
+[15.941122] (-) TimerEvent: {}
+[16.041434] (-) TimerEvent: {}
+[16.141752] (-) TimerEvent: {}
+[16.242035] (-) TimerEvent: {}
+[16.342347] (-) TimerEvent: {}
+[16.442615] (-) TimerEvent: {}
+[16.542865] (-) TimerEvent: {}
+[16.643118] (-) TimerEvent: {}
+[16.743486] (-) TimerEvent: {}
+[16.843797] (-) TimerEvent: {}
+[16.944119] (-) TimerEvent: {}
+[17.044417] (-) TimerEvent: {}
+[17.144677] (-) TimerEvent: {}
+[17.244953] (-) TimerEvent: {}
+[17.345253] (-) TimerEvent: {}
+[17.445554] (-) TimerEvent: {}
+[17.545847] (-) TimerEvent: {}
+[17.646124] (-) TimerEvent: {}
+[17.746403] (-) TimerEvent: {}
+[17.846740] (-) TimerEvent: {}
+[17.947022] (-) TimerEvent: {}
+[18.047278] (-) TimerEvent: {}
+[18.147584] (-) TimerEvent: {}
+[18.247762] (-) TimerEvent: {}
+[18.347960] (-) TimerEvent: {}
+[18.448256] (-) TimerEvent: {}
+[18.548531] (-) TimerEvent: {}
+[18.648805] (-) TimerEvent: {}
+[18.749036] (-) TimerEvent: {}
+[18.849340] (-) TimerEvent: {}
+[18.949666] (-) TimerEvent: {}
+[19.049903] (-) TimerEvent: {}
+[19.150172] (-) TimerEvent: {}
+[19.250532] (-) TimerEvent: {}
+[19.350828] (-) TimerEvent: {}
+[19.451107] (-) TimerEvent: {}
+[19.551355] (-) TimerEvent: {}
+[19.651707] (-) TimerEvent: {}
+[19.751944] (-) TimerEvent: {}
+[19.852210] (-) TimerEvent: {}
+[19.952495] (-) TimerEvent: {}
+[20.052826] (-) TimerEvent: {}
+[20.153085] (-) TimerEvent: {}
+[20.253379] (-) TimerEvent: {}
+[20.353669] (-) TimerEvent: {}
+[20.453934] (-) TimerEvent: {}
+[20.554153] (-) TimerEvent: {}
+[20.654371] (-) TimerEvent: {}
+[20.754602] (-) TimerEvent: {}
+[20.854741] (-) TimerEvent: {}
+[20.954972] (-) TimerEvent: {}
+[21.055246] (-) TimerEvent: {}
+[21.155470] (-) TimerEvent: {}
+[21.255743] (-) TimerEvent: {}
+[21.355960] (-) TimerEvent: {}
+[21.456157] (-) TimerEvent: {}
+[21.556354] (-) TimerEvent: {}
+[21.656559] (-) TimerEvent: {}
+[21.756752] (-) TimerEvent: {}
+[21.856901] (-) TimerEvent: {}
+[21.957083] (-) TimerEvent: {}
+[22.057224] (-) TimerEvent: {}
+[22.157386] (-) TimerEvent: {}
+[22.257602] (-) TimerEvent: {}
+[22.357837] (-) TimerEvent: {}
+[22.458106] (-) TimerEvent: {}
+[22.558377] (-) TimerEvent: {}
+[22.658618] (-) TimerEvent: {}
+[22.758873] (-) TimerEvent: {}
+[22.859169] (-) TimerEvent: {}
+[22.959458] (-) TimerEvent: {}
+[23.059685] (-) TimerEvent: {}
+[23.159935] (-) TimerEvent: {}
+[23.260203] (-) TimerEvent: {}
+[23.360461] (-) TimerEvent: {}
+[23.460710] (-) TimerEvent: {}
+[23.561050] (-) TimerEvent: {}
+[23.661333] (-) TimerEvent: {}
+[23.761613] (-) TimerEvent: {}
+[23.861900] (-) TimerEvent: {}
+[23.962164] (-) TimerEvent: {}
+[24.062442] (-) TimerEvent: {}
+[24.162755] (-) TimerEvent: {}
+[24.263031] (-) TimerEvent: {}
+[24.363386] (-) TimerEvent: {}
+[24.463682] (-) TimerEvent: {}
+[24.563948] (-) TimerEvent: {}
+[24.664242] (-) TimerEvent: {}
+[24.764504] (-) TimerEvent: {}
+[24.864834] (-) TimerEvent: {}
+[24.965115] (-) TimerEvent: {}
+[25.065382] (-) TimerEvent: {}
+[25.165706] (-) TimerEvent: {}
+[25.266161] (-) TimerEvent: {}
+[25.366447] (-) TimerEvent: {}
+[25.466752] (-) TimerEvent: {}
+[25.567018] (-) TimerEvent: {}
+[25.667285] (-) TimerEvent: {}
+[25.767571] (-) TimerEvent: {}
+[25.867804] (-) TimerEvent: {}
+[25.968044] (-) TimerEvent: {}
+[26.068322] (-) TimerEvent: {}
+[26.168559] (-) TimerEvent: {}
+[26.268826] (-) TimerEvent: {}
+[26.369136] (-) TimerEvent: {}
+[26.469395] (-) TimerEvent: {}
+[26.569659] (-) TimerEvent: {}
+[26.669952] (-) TimerEvent: {}
+[26.770229] (-) TimerEvent: {}
+[26.870505] (-) TimerEvent: {}
+[26.970812] (-) TimerEvent: {}
+[27.071176] (-) TimerEvent: {}
+[27.171401] (-) TimerEvent: {}
+[27.271573] (-) TimerEvent: {}
+[27.371851] (-) TimerEvent: {}
+[27.472138] (-) TimerEvent: {}
+[27.572517] (-) TimerEvent: {}
+[27.672803] (-) TimerEvent: {}
+[27.773037] (-) TimerEvent: {}
+[27.873303] (-) TimerEvent: {}
+[27.973522] (-) TimerEvent: {}
+[28.073871] (-) TimerEvent: {}
+[28.174119] (-) TimerEvent: {}
+[28.274416] (-) TimerEvent: {}
+[28.374654] (-) TimerEvent: {}
+[28.474941] (-) TimerEvent: {}
+[28.575240] (-) TimerEvent: {}
+[28.675611] (-) TimerEvent: {}
+[28.775905] (-) TimerEvent: {}
+[28.876206] (-) TimerEvent: {}
+[28.976506] (-) TimerEvent: {}
+[29.076828] (-) TimerEvent: {}
+[29.177098] (-) TimerEvent: {}
+[29.277371] (-) TimerEvent: {}
+[29.377641] (-) TimerEvent: {}
+[29.477957] (-) TimerEvent: {}
+[29.578255] (-) TimerEvent: {}
+[29.678524] (-) TimerEvent: {}
+[29.778760] (-) TimerEvent: {}
+[29.879037] (-) TimerEvent: {}
+[29.979310] (-) TimerEvent: {}
+[30.079619] (-) TimerEvent: {}
+[30.179863] (-) TimerEvent: {}
+[30.280180] (-) TimerEvent: {}
+[30.380454] (-) TimerEvent: {}
+[30.480722] (-) TimerEvent: {}
+[30.580993] (-) TimerEvent: {}
+[30.681287] (-) TimerEvent: {}
+[30.781606] (-) TimerEvent: {}
+[30.881882] (-) TimerEvent: {}
+[30.982171] (-) TimerEvent: {}
+[31.082449] (-) TimerEvent: {}
+[31.182790] (-) TimerEvent: {}
+[31.283163] (-) TimerEvent: {}
+[31.383546] (-) TimerEvent: {}
+[31.483878] (-) TimerEvent: {}
+[31.584397] (-) TimerEvent: {}
+[31.684749] (-) TimerEvent: {}
+[31.785021] (-) TimerEvent: {}
+[31.885326] (-) TimerEvent: {}
+[31.985655] (-) TimerEvent: {}
+[32.086077] (-) TimerEvent: {}
+[32.186376] (-) TimerEvent: {}
+[32.286640] (-) TimerEvent: {}
+[32.386915] (-) TimerEvent: {}
+[32.487182] (-) TimerEvent: {}
+[32.587429] (-) TimerEvent: {}
+[32.687591] (-) TimerEvent: {}
+[32.787791] (-) TimerEvent: {}
+[32.888030] (-) TimerEvent: {}
+[32.988312] (-) TimerEvent: {}
+[33.088597] (-) TimerEvent: {}
+[33.188870] (-) TimerEvent: {}
+[33.289159] (-) TimerEvent: {}
+[33.389459] (-) TimerEvent: {}
+[33.489761] (-) TimerEvent: {}
+[33.590041] (-) TimerEvent: {}
+[33.690332] (-) TimerEvent: {}
+[33.790625] (-) TimerEvent: {}
+[33.890943] (-) TimerEvent: {}
+[33.991238] (-) TimerEvent: {}
+[34.091548] (-) TimerEvent: {}
+[34.191858] (-) TimerEvent: {}
+[34.292148] (-) TimerEvent: {}
+[34.392464] (-) TimerEvent: {}
+[34.492775] (-) TimerEvent: {}
+[34.593076] (-) TimerEvent: {}
+[34.693337] (-) TimerEvent: {}
+[34.793628] (-) TimerEvent: {}
+[34.893903] (-) TimerEvent: {}
+[34.994106] (-) TimerEvent: {}
+[35.094321] (-) TimerEvent: {}
+[35.194547] (-) TimerEvent: {}
+[35.294814] (-) TimerEvent: {}
+[35.395048] (-) TimerEvent: {}
+[35.495222] (-) TimerEvent: {}
+[35.595428] (-) TimerEvent: {}
+[35.695630] (-) TimerEvent: {}
+[35.795925] (-) TimerEvent: {}
+[35.896224] (-) TimerEvent: {}
+[35.996601] (-) TimerEvent: {}
+[36.096943] (-) TimerEvent: {}
+[36.197203] (-) TimerEvent: {}
+[36.297500] (-) TimerEvent: {}
+[36.397779] (-) TimerEvent: {}
+[36.498015] (-) TimerEvent: {}
+[36.598267] (-) TimerEvent: {}
+[36.698486] (-) TimerEvent: {}
+[36.798782] (-) TimerEvent: {}
+[36.899066] (-) TimerEvent: {}
+[36.999555] (-) TimerEvent: {}
+[37.099874] (-) TimerEvent: {}
+[37.200187] (-) TimerEvent: {}
+[37.300536] (-) TimerEvent: {}
+[37.400816] (-) TimerEvent: {}
+[37.501049] (-) TimerEvent: {}
+[37.601329] (-) TimerEvent: {}
+[37.701505] (-) TimerEvent: {}
+[37.801742] (-) TimerEvent: {}
+[37.901944] (-) TimerEvent: {}
+[38.002143] (-) TimerEvent: {}
+[38.102358] (-) TimerEvent: {}
+[38.202794] (-) TimerEvent: {}
+[38.303108] (-) TimerEvent: {}
+[38.403477] (-) TimerEvent: {}
+[38.503824] (-) TimerEvent: {}
+[38.604202] (-) TimerEvent: {}
+[38.704536] (-) TimerEvent: {}
+[38.804842] (-) TimerEvent: {}
+[38.905115] (-) TimerEvent: {}
+[39.005299] (-) TimerEvent: {}
+[39.105461] (-) TimerEvent: {}
+[39.205730] (-) TimerEvent: {}
+[39.305933] (-) TimerEvent: {}
+[39.406112] (-) TimerEvent: {}
+[39.506316] (-) TimerEvent: {}
+[39.606526] (-) TimerEvent: {}
+[39.706739] (-) TimerEvent: {}
+[39.806986] (-) TimerEvent: {}
+[39.907332] (-) TimerEvent: {}
+[40.007641] (-) TimerEvent: {}
+[40.107888] (-) TimerEvent: {}
+[40.185281] (planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/corridor_builder.hpp:10\x1b[m\x1b[K,\n'}
+[40.185482] (planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:28\x1b[m\x1b[K:\n'}
+[40.185530] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid polyhedronGenerator::paramSet(bool, bool, bool, const int&, const int&, double, double, double)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.185572] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:131:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kis_gpu_on_stage_1\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.185603] (planner) StderrLine: {'line': b'  131 |     void paramSet(\x1b[01;35m\x1b[Kbool is_gpu_on_stage_1\x1b[m\x1b[K, bool is_gpu_on_stage_2, bool is_cluster_on,\n'}
+[40.185635] (planner) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.185667] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:131:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kis_gpu_on_stage_2\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.185697] (planner) StderrLine: {'line': b'  131 |     void paramSet(bool is_gpu_on_stage_1, \x1b[01;35m\x1b[Kbool is_gpu_on_stage_2\x1b[m\x1b[K, bool is_cluster_on,\n'}
+[40.185733] (planner) StderrLine: {'line': b'      |                                           \x1b[01;35m\x1b[K~~~~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.185765] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kbool polyhedronGenerator::serialConvexTest2D(int, int, int, int, const MatrixXi&, const MatrixXi&, const MatrixXi&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.185799] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:299:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmax_y_id\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.185831] (planner) StderrLine: {'line': b'  299 |                             int cluster_grid_num, \x1b[01;35m\x1b[Kint max_y_id\x1b[m\x1b[K,\n'}
+[40.185864] (planner) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[40.185894] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid polyhedronGenerator::polygonGeneration(std::vector<int>&, std::vector<int>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.185921] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:589:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[40.185950] (planner) StderrLine: {'line': b'  589 |             for (int i = 0; \x1b[01;35m\x1b[Ki < rect_grid_x.size()\x1b[m\x1b[K; ++i) {\n'}
+[40.185976] (planner) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.186002] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:608:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<int>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K-Wsign-compare\x1b[m\x1b[K]\n'}
+[40.186029] (planner) StderrLine: {'line': b'  608 |         for (int i = 0; \x1b[01;35m\x1b[Ki < rect_grid_x.size()\x1b[m\x1b[K; ++i) {\n'}
+[40.186055] (planner) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.186082] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid polyhedronGenerator::printVertexIdx(const VectorXi&, const string&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.186110] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:1050:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kvertex_idx\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.186140] (planner) StderrLine: {'line': b' 1050 |     void printVertexIdx(\x1b[01;35m\x1b[Kconst VectorXi& vertex_idx\x1b[m\x1b[K, const string& name) {\n'}
+[40.186166] (planner) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~^~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.186194] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/polyhedrongenerator_class.hpp:1050:67:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kname\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.186222] (planner) StderrLine: {'line': b' 1050 |     void printVertexIdx(const VectorXi& vertex_idx, \x1b[01;35m\x1b[Kconst string& name\x1b[m\x1b[K) {\n'}
+[40.186248] (planner) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[40.186274] (planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/corridor_builder.hpp:11\x1b[m\x1b[K,\n'}
+[40.186303] (planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:28\x1b[m\x1b[K:\n'}
+[40.186328] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Vec2> HStarPlanner::search(int, int, double, int, int, double, int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.186355] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:115:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kgheading\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.186381] (planner) StderrLine: {'line': b'  115 |                         int gx, int gy, \x1b[01;35m\x1b[Kdouble gheading = 0.0\x1b[m\x1b[K,\n'}
+[40.186408] (planner) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K~~~~~~~^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[40.186434] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HStarPlanner::initNodes()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.186463] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:254:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Ki\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[40.186491] (planner) StderrLine: {'line': b'  254 |         size_t \x1b[01;35m\x1b[Ki\x1b[m\x1b[K = 0;\n'}
+[40.186516] (planner) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[40.186540] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HStarPlanner::cleanup()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.186567] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:342:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[40.186594] (planner) StderrLine: {'line': b'  342 |         \x1b[01;35m\x1b[Kif\x1b[m\x1b[K(occupancy) delete[] occupancy; occupancy = nullptr;\n'}
+[40.186619] (planner) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[40.186644] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:342:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[40.186671] (planner) StderrLine: {'line': b'  342 |         if(occupancy) delete[] occupancy; \x1b[01;36m\x1b[Koccupancy\x1b[m\x1b[K = nullptr;\n'}
+[40.186696] (planner) StderrLine: {'line': b'      |                                           \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[40.186722] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:343:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K-Wmisleading-indentation\x1b[m\x1b[K]\n'}
+[40.186758] (planner) StderrLine: {'line': b'  343 |         \x1b[01;35m\x1b[Kif\x1b[m\x1b[K(nodes) delete[] nodes; nodes = nullptr;\n'}
+[40.186787] (planner) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[40.186813] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/SFC_generation/final_hstar.hpp:343:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[40.186841] (planner) StderrLine: {'line': b'  343 |         if(nodes) delete[] nodes; \x1b[01;36m\x1b[Knodes\x1b[m\x1b[K = nullptr;\n'}
+[40.186871] (planner) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[40.186898] (planner) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/geo_utils.hpp:29\x1b[m\x1b[K,\n'}
+[40.186924] (planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/gcopter.hpp:31\x1b[m\x1b[K,\n'}
+[40.186950] (planner) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:33\x1b[m\x1b[K:\n'}
+[40.186976] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint sdlp::linfracprog(const double*, int, int, const double*, const double*, double*, double*, int*, int*) [with int d = 1]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.187003] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:666:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmax_size\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.187031] (planner) StderrLine: {'line': b'  666 |                               \x1b[01;35m\x1b[Kconst int max_size\x1b[m\x1b[K,\n'}
+[40.187057] (planner) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[40.187083] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/include/planner/minco_planner/sdlp.hpp:671:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kwork\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.187112] (planner) StderrLine: {'line': b'  671 |                               \x1b[01;35m\x1b[Kdouble *work\x1b[m\x1b[K,\n'}
+[40.187139] (planner) StderrLine: {'line': b'      |                               \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[40.187166] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid IntegratedMappingSFCGCOPTER::save_traj(const Trajectory<3>&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[40.187198] (planner) StderrLine: {'line': b'\x1b[01m\x1b[K/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/src/planner/src/integrated_drone_mapping_node_with_drone_tracking.cpp:961:39:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Ktraj\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-parameter\x1b[m\x1b[K]\n'}
+[40.187229] (planner) StderrLine: {'line': b'  961 |   void save_traj(\x1b[01;35m\x1b[Kconst Trajectory<3> &traj\x1b[m\x1b[K) {\n'}
+[40.187257] (planner) StderrLine: {'line': b'      |                  \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[40.205660] (planner) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable integrated_drone_mapping_node_with_drone_tracking\x1b[0m\n'}
+[40.207967] (-) TimerEvent: {}
+[40.308236] (-) TimerEvent: {}
+[40.408559] (-) TimerEvent: {}
+[40.476595] (planner) StdoutLine: {'line': b'[100%] Built target integrated_drone_mapping_node_with_drone_tracking\n'}
+[40.487337] (planner) CommandEnded: {'returncode': 0}
+[40.487717] (planner) JobProgress: {'identifier': 'planner', 'progress': 'install'}
+[40.500405] (planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner'], 'cwd': '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'rishabh'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/rishabh'), ('OLDPWD', '/home/rishabh/Robotics/Aerial-Robotics'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2900'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'rishabh'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'rishabh'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/lib/ccache:/home/rishabh/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/rishabh/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/xtensa-esp-elf/bin/'), ('SESSION_MANAGER', 'local/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:@/tmp/.ICE-unix/2865,unix/rishabh-HP-Pavilion-Plus-Laptop-16-ab0xxx:/tmp/.ICE-unix/2865'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/da6c3e71_f489_42a8_adc1_ed49f49636ab'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.108'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/build/planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[40.508663] (-) TimerEvent: {}
+[40.510828] (planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.511019] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/lib/planner/integrated_drone_mapping_node_with_drone_tracking\n'}
+[40.513001] (planner) StdoutLine: {'line': b'-- Set runtime path of "/home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/lib/planner/integrated_drone_mapping_node_with_drone_tracking" to ""\n'}
+[40.513105] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/launch\n'}
+[40.513144] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/launch/mapping_tracking.launch.py\n'}
+[40.513175] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/launch/grid_path_log.csv\n'}
+[40.513231] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/config\n'}
+[40.513264] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/config/mapping_tracking_params.yaml\n'}
+[40.513306] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/ament_index/resource_index/package_run_dependencies/planner\n'}
+[40.513335] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/ament_index/resource_index/parent_prefix_path/planner\n'}
+[40.513363] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/environment/ament_prefix_path.sh\n'}
+[40.513389] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/environment/ament_prefix_path.dsv\n'}
+[40.513417] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/environment/path.sh\n'}
+[40.513457] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/environment/path.dsv\n'}
+[40.513483] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/local_setup.bash\n'}
+[40.513511] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/local_setup.sh\n'}
+[40.513556] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/local_setup.zsh\n'}
+[40.513588] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/local_setup.dsv\n'}
+[40.513630] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/package.dsv\n'}
+[40.513671] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/ament_index/resource_index/packages/planner\n'}
+[40.513711] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/cmake/plannerConfig.cmake\n'}
+[40.513755] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/cmake/plannerConfig-version.cmake\n'}
+[40.513798] (planner) StdoutLine: {'line': b'-- Installing: /home/rishabh/Robotics/Aerial-Robotics/minco-trajectory-planner/install/planner/share/planner/package.xml\n'}
+[40.515336] (planner) CommandEnded: {'returncode': 0}
+[40.545259] (planner) JobEnded: {'identifier': 'planner', 'rc': 0}
+[40.545887] (-) EventReactorShutdown: {}

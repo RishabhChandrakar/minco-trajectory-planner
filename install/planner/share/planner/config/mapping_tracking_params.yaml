@@ -1,0 +1,9 @@
+integrated_mapping_sfc_gcopter:
+  ros__parameters:
+    goal_x: -1.2
+    goal_y: -11.3
+    goal_z: 1.5
+    drone_radius_cm: 40.0
+    max_vel: 1.5
+    lookahead_indices: 200
+    pipeline_step_duration: 0.2

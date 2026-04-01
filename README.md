@@ -1,1 +1,2 @@
 # minco-trajectory-planner
+Minco trajectory planner is designed to generate smooth, dynamically feasible, and time-efficient trajectories for quadrotors in complex environments. It uses polynomial optimization to ensure continuity and low control effort while satisfying system constraints. The formulation is lightweight and efficient, making it suitable for real-time use even on low-cost, resource-constrained onboard computers. It also integrates well with control and planning modules for agile autonomous flight.

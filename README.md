@@ -47,8 +47,7 @@ Please kindly star :star: this project if it helps you. We take great efforts to
 ## Table of Contents
 
 * [Quick Start](#1-Quick-Start)
-* [Algorithms and Papers](#2-Algorithms-and-Papers)
-<!-- * [Run Simulations](#4-run-simulations) -->
+* [Algorithms and Papers](#2-Algorithms-and-Papers)       <!-- * [Run Simulations](#4-run-simulations) -->
 * [Use in Your Application](#3-use-in-your-application)
 <!-- * [Known issues](#known-issues) -->
 

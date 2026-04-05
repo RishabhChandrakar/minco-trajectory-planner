@@ -57,44 +57,38 @@ Please kindly star :star: this project if it helps you. We take great efforts to
 
 ## 1. Quick Start
 
-This project has been tested on Ubuntu 18.04(ROS Melodic) and 20.04(ROS Noetic).
+This project has been tested on Ubuntu 22.04(ROS Humble) .
 
-Firstly, you should install __nlopt v2.7.1__:
-```
-git clone -b v2.7.1 https://github.com/stevengj/nlopt.git
-cd nlopt
-mkdir build
-cd build
-cmake ..
-make
-sudo make install
-```
+Firstly, you should install the following required libraries:
 
-Next, you can run the following commands to install other required tools:
+Eigen3
+Ompl
+Octopmap
+
 ```
-sudo apt-get install libarmadillo-dev
+sudo apt-get update && sudo apt-get install -y \
+  libeigen3-dev \
+  ros-humble-octomap-ros \
+  ros-humble-ompl
+
 ```
 
 Then simply clone and compile our package (using ssh here):
 
 ```
-cd ${YOUR_WORKSPACE_PATH}/src
-git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
-cd ../ 
-catkin_make
+git clone git@github.com:RishabhChandrakar/minco-trajectory-planner.git
+cd minco-trajectory-planner
+colcon build
 ```
 
 You may check the detailed [instruction](#3-setup-and-config) to setup the project. 
-After compilation you can start the visualization by: 
 
+After compilation you can start a simulation (run in a new terminals): 
 ```
-source devel/setup.bash && roslaunch plan_manage rviz.launch
+source install/setup.bash && ros2 launch planner planner_simulation.launch
 ```
-and start a simulation (run in a new terminals): 
-```
-source devel/setup.bash && roslaunch plan_manage kino_replan.launch
-```
-You will find the random map and the drone in ```Rviz```. You can select goals for the drone to reach using the ```2D Nav Goal``` tool. A sample simulation is showed [here](#demo1).
+
+<!-- You will find the random map and the drone in ```Rviz```. You can select goals for the drone to reach using the ```2D Nav Goal``` tool. A sample simulation is showed [here](#demo1). -->
 
 
 ## 2. Algorithms and Papers

@@ -48,11 +48,9 @@ Please kindly star :star: this project if it helps you. We take great efforts to
 
 * [Quick Start](#1-Quick-Start)
 * [Algorithms and Papers](#2-Algorithms-and-Papers)
-* [Setup and Config](#3-Setup-and-Config)
-* [Run Simulations](#4-run-simulations)
-* [Use in Your Application](#5-use-in-your-application)
-* [Updates](#6-updates)
-* [Known issues](#known-issues)
+<!-- * [Run Simulations](#4-run-simulations) -->
+* [Use in Your Application](#3-use-in-your-application)
+<!-- * [Known issues](#known-issues) -->
 
 
 ## 1. Quick Start
@@ -119,130 +117,12 @@ All planning algorithms along with other key modules, such as mapping, sfc gener
 
 - __plan_manage__: High-level modules that schedule and call the mapping and planning algorithms. Interfaces for launching the whole system, as well as the configuration files are contained here.
 
+- __system_node__: This is the main ROS node that integrates, schedules, and calls the mapping, corridor generation, and planning algorithms. It handles real-time replanning by regenerating trajectories when new obstacles are detected and manages the overall system execution.
+
+The full pipeline is validated in simulation (Gazebo–ROS–ArduPilot SITL) as well as on hardware with an F450 quadrotor running on a Raspberry Pi 4.
 
 
-## 3. Setup and Config
-
-### Prerequisites
-
-1. Our software is developed and tested in Ubuntu 18.04(ROS Melodic) and 20.04(ROS Noetic). 
-   
-2. We use [**NLopt**](https://nlopt.readthedocs.io/en/latest/NLopt_Installation) to solve the non-linear optimization problem. The __uav_simulator__ depends on the C++ linear algebra library __Armadillo__. The two dependencies can be installed by the following command.
-
-Firstly, you should install __nlopt v2.7.1__:
-```
-git clone -b v2.7.1 https://github.com/stevengj/nlopt.git
-cd nlopt
-mkdir build
-cd build
-cmake ..
-make
-sudo make install
-```
-
-Next, you can run the following commands to install other required tools:
-```
-sudo apt-get install libarmadillo-dev
-```
-
-### Build on ROS
-
-After the prerequisites are satisfied, you can clone this repository to your catkin workspace and catkin_make. A new workspace is recommended:
-
-```
-  cd ${YOUR_WORKSPACE_PATH}/src
-  git clone https://github.com/HKUST-Aerial-Robotics/Fast-Planner.git
-  cd ../
-  catkin_make
-```
-
-If you encounter problems in this step, please first refer to existing __issues__, __pull requests__ and __Google__ before raising a new issue.
-
-Now you are ready to [run a simulation](#4-run-simulations).
-
-### Use GPU Depth Rendering (can be skipped optionally)
-
-This step is not mandatory for running the simulations. However, if you want to run the more realistic depth camera in __uav_simulator__, installation of [CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit) is needed. Otherwise, a less realistic depth sensor model will be used.
-
- The **local_sensing** package in __uav_simulator__ has the option of using GPU or CPU to render the depth sensor measurement. By default, it is set to CPU version in CMakeLists:
- 
- ```
- set(ENABLE_CUDA false)
- # set(ENABLE_CUDA true)
- ```
-However, we STRONGLY recommend the GPU version, because it generates depth images more like a real depth camera.
-To enable the GPU depth rendering, set ENABLE_CUDA to true, and also remember to change the 'arch' and 'code' flags according to your graphics card devices. You can check the right code [here](https://github.com/tpruvot/ccminer/wiki/Compatibility).
-
-```
-    set(CUDA_NVCC_FLAGS 
-      -gencode arch=compute_61,code=sm_61;
-    ) 
-``` 
-For installation of CUDA, please go to [CUDA ToolKit](https://developer.nvidia.com/cuda-toolkit)
-
-## 4. Run Simulations
-
-Run [Rviz](http://wiki.ros.org/rviz) with our configuration firstly:
-
-```
-  <!-- go to your workspace and run: -->
-  source devel/setup.bash
-  roslaunch plan_manage rviz.launch
-```
-
-Then run the quadrotor simulator and __Fast-Planner__. 
-Several examples are provided below:
-
-### Kinodynamic Path Searching & B-spline Optimization
-
-In this method, a kinodynamic path searching finds a safe, dynamically feasible, and minimum-time initial trajectory in the discretized control space. 
-Then the smoothness and clearance of the trajectory are improved by a B-spline optimization.
-To test this method, run:
-
-```
-  <!-- open a new terminal, go to your workspace and run: -->
-  source devel/setup.bash
-  roslaunch plan_manage kino_replan.launch
-```
-
-Normally, you will find the randomly generated map and the drone model in ```Rviz```. At this time, you can trigger the planner using the ```2D Nav Goal``` tool. When a point is clicked in ```Rviz```, a new trajectory will be generated immediately and executed by the drone. A sample is displayed below:
-
-<!-- add some gif here -->
- <p id="demo1" align="center">
-  <img src="files/ral19_3.gif" width = "480" height = "270"/>
- </p>
-
-Related algorithms are detailed in [this paper](https://ieeexplore.ieee.org/document/8758904).
-
-
-
-### Topological Path Searching & Path-guided Optimization
-
-This method features searching for multiple trajectories in distinctive topological classes. Thanks to the strategy, the solution space is explored more thoroughly, avoiding local minima and yielding better solutions.
-Similarly, run:
-
-```
-  <!-- open a new terminal, go to your workspace and run: -->
-  source devel/setup.bash
-  roslaunch plan_manage topo_replan.launch
-```
-
-then you will find the random map generated and can use the ```2D Nav Goal``` to trigger the planner:
-
-<!-- add some gif here -->
- <p align="center">
-  <img src="files/icra20_3.gif" width = "480" height = "270"/>
- </p>
-
-Related algorithms are detailed in [this paper](https://arxiv.org/abs/1912.12644).
-
-
-### Perception-aware Replanning
-
-The code will be released after the publication of [associated paper](https://arxiv.org/abs/2007.03465).
-
-
-## 5. Use in Your Application
+## 3. Use in Your Application
 
 If you have successfully run the simulation and want to use __Fast-Planner__ in your project,
 please explore the files kino_replan.launch or topo_replan.launch.
@@ -253,25 +133,3 @@ For higher map fusion efficiency we do downsampling (in kino_algorithm.xml, skip
 If you use depth images with lower resolution (like 256x144), you might disable the downsampling by setting skip_pixel = 1. Also, the _depth_scaling_factor_ is set to 1000, which may need to be changed according to your device.
 
 Finally, for setup problem, like compilation error caused by different versions of ROS/Eigen, please first refer to existing __issues__, __pull request__, and __Google__ before raising a new issue. Insignificant issue will receive no reply.
-
-
-## 6. Updates
-
-- __Oct 20, 2020__: Fast-Planner is extended and applied to fast autonomous exploration. Check this [repo](https://github.com/HKUST-Aerial-Robotics/FUEL) for more details.
-  
-- __July 5, 2020__: We will release the implementation of paper: _RAPTOR: Robust and Perception-aware Trajectory Replanning for Quadrotor Fast Flight_ (submitted to TRO, under review) in the future.
-
-- __April 12, 2020__: The implementation of the ICRA2020 paper: _Robust Real-time UAV Replanning Using Guided Gradient-based Optimization and Topological Paths_ is available.
-
-- __Jan 30, 2020__: The volumetric mapping is integrated with our planner. It takes in depth image and camera pose pairs as input, do raycasting to fuse the measurements, and build a Euclidean signed distance field (ESDF) for the planning module.
-
-
-## Acknowledgements
-  We use **NLopt** for non-linear optimization.
-
-## Licence
-The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
-
-
-## Disclaimer
-This is research code, it is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of merchantability or fitness for a particular purpose.

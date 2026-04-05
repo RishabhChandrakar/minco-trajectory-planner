@@ -124,7 +124,7 @@ The full pipeline is validated in simulation (Gazebo–ROS–ArduPilot SITL) as 
 
 ## 3. Use in Your Application
 
-If you have successfully run the simulation and want to use __Fast-Planner__ in your project,
+<!-- If you have successfully run the simulation and want to use __minco-trajectory-planner__ in your project,
 please explore the files kino_replan.launch or topo_replan.launch.
 Important parameters that may be changed in your usage are contained and documented.
 
@@ -133,3 +133,5 @@ For higher map fusion efficiency we do downsampling (in kino_algorithm.xml, skip
 If you use depth images with lower resolution (like 256x144), you might disable the downsampling by setting skip_pixel = 1. Also, the _depth_scaling_factor_ is set to 1000, which may need to be changed according to your device.
 
 Finally, for setup problem, like compilation error caused by different versions of ROS/Eigen, please first refer to existing __issues__, __pull request__, and __Google__ before raising a new issue. Insignificant issue will receive no reply.
+
+-->

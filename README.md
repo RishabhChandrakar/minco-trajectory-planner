@@ -20,7 +20,7 @@ __Authors__: [Boyu Zhou](http://sysu-star.com) and [Shaojie Shen](http://uav.ust
 </p> -->
 
 <p align="center">
-  <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/>
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
   <img src="media_files/obstacle_avoidance_simulation_1.gif" width = "400" height = "225"/>
   <img src="media_files/minco_trajectory_planner.jpeg" width = "400" height = "225"/>
   <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->

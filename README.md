@@ -1,23 +1,7 @@
 # minco-trajectory-planner
 **Minco trajectory** planner is designed to generate smooth, dynamically feasible, and time-efficient trajectories for quadrotors in complex environments. It uses polynomial optimization to ensure continuity and low control effort while satisfying system constraints. The formulation is lightweight and efficient, making it suitable for real-time use even on low-cost, resource-constrained onboard computers. It also integrates well with control and planning modules for agile autonomous flight.
 
-<!-- 
 
-**News**: 
-
-- __Mar 13, 2021__: Code for fast autonomous exploration is available now! Check this [repo](https://github.com/HKUST-Aerial-Robotics/FUEL) for more details.
-
-- __Oct 20, 2020__: Fast-Planner is extended and applied to fast autonomous exploration. Check this [repo](https://github.com/HKUST-Aerial-Robotics/FUEL) for more details.
-
-__Authors__: [Boyu Zhou](http://sysu-star.com) and [Shaojie Shen](http://uav.ust.hk/group/) from the [HUKST Aerial Robotics Group](http://uav.ust.hk/), [Fei Gao](http://zju-fast.com/fei-gao/) from ZJU FAST Lab.
-
--->
-
-<!-- - __B-spline trajectory optimization guided by topological paths__:
-<p align="center">
-  <img src="https://github.com/HKUST-Aerial-Robotics/TopoTraj/blob/master/files/icra20_1.gif" width = "420" height = "237"/>
-  <img src="https://github.com/HKUST-Aerial-Robotics/TopoTraj/blob/master/files/icra20_2.gif" width = "420" height = "237"/>
-</p> -->
 
 <p align="center">
   <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
@@ -63,11 +47,10 @@ Ompl
 Octopmap
 
 ```
-sudo apt-get update && sudo apt-get install -y \
+  sudo apt-get update && sudo apt-get install -y \
   libeigen3-dev \
   ros-humble-octomap-ros \
   ros-humble-ompl
-
 ```
 
 Then simply clone and compile our package (using ssh here):
@@ -110,7 +93,21 @@ All planning algorithms along with other key modules, such as mapping, sfc gener
 
 - __mapping__: The online mapping algorithms. The map is built using 2D LiDAR data from the `/scan` topic along with odometry. It takes in raw scan data of 2-D Lidar  and lidar pose (odometry) pairs as input, do raycasting to update a probabilistic volumetric map, and build an occupancy grid map for the planning system. We maintain a local occupancy grid centered around the drone, where each cell stores the belief of being occupied. 
 
+<p align="center">
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
+  <img src="media_files/mapping_alone_2.png" width = "400" height = "225"/>
+  <!-- <img src="media_files/minco_trajectory_planner.jpeg" width = "400" height = "225"/> -->
+  <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
+</p>
+
 - __sfc_generation__: This module consists of  a Safe Flight Corridor (SFC) generation pipeline that converts obstacle-rich space into convex polytopes, using seed voxel extraction, rectangle expansion, QuickHull Algorithms . A dedicated C++ CorridorBuilder module then assembles and merges these polytopes along the A-star generated path to form a continuous safe corridor for trajectory optimization.
+
+<p align="center">
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
+  <img src="media_files/long_sfc_1.png" width = "400" height = "225"/>
+  <img src="media_files/long_sfc_2.png" width = "400" height = "225"/>
+  <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
+</p>
 
 - __minco_planner__: It includes the core MINCO-based trajectory optimization modules, covering differential flatness, trajectory parameterization, and nonlinear optimization. The implementation integrates supporting components such as geometric utilities, root finding, convex decomposition (QuickHull), and optimization solvers (LBFGS, SDLP) to generate smooth, dynamically feasible, and collision-free trajectories within the safe corridors.
 
@@ -134,3 +131,18 @@ If you use depth images with lower resolution (like 256x144), you might disable 
 Finally, for setup problem, like compilation error caused by different versions of ROS/Eigen, please first refer to existing __issues__, __pull request__, and __Google__ before raising a new issue. Insignificant issue will receive no reply.
 
 -->
+
+## 4. Parameters
+
+The ROS implementation exposes several parameters:
+
+|Parameter|Definition|Default|
+|---|---|---|
+|`enable_magnetometer`|If true, magnetometer readings are included in the state estimation update.|`false`|
+|`mag_calib/bias`|Bias of the magnetometer.|`[0,0,0]`|
+|`mag_calib/scale`|Scale of the magnetometer.|`[1,1,1]`|
+|`mag_calib/reference`|World frame reference vector of the magnetometer.|`[0,0,0]`|
+|`process_scale_factor`|'Fudge factor' to multiply by incoming gyro covariances.|1|
+|`gyro_bias_thresh`|Threshold of motion below which we may estimate gyro bias.|0.01 rad/s|
+
+When using the node, you should remap `~imu` and `~field` to the appropriate topics. See `attitude_eskf.launch` for an example.

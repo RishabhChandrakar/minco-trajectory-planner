@@ -95,7 +95,7 @@ All planning algorithms along with other key modules, such as mapping, sfc gener
 
 <p align="center">
   <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
-  <img src="media_files/mapping_alone_2.png" width = "400" height = "225"/>
+  <img src="media_files/mapping_alone_2.png" width = "800" height = "600"/>
   <!-- <img src="media_files/minco_trajectory_planner.jpeg" width = "400" height = "225"/> -->
   <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
 </p>

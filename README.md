@@ -115,7 +115,23 @@ All planning algorithms along with other key modules, such as mapping, sfc gener
 
 - __system_node__: This is the main ROS node that integrates, schedules, and calls the mapping, corridor generation, and planning algorithms. It handles real-time replanning by regenerating trajectories when new obstacles are detected and manages the overall system execution.
 
-The full pipeline is validated in simulation (Gazebo–ROS–ArduPilot SITL) as well as on hardware with an F450 quadrotor running on a Raspberry Pi 4.
+The full pipeline is validated in simulation (Gazebo–ROS–ArduPilot SITL) 
+
+<p align="center">
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
+  <img src="media_files/minco_trajectory_planner_simulation_2-ezgif.com-video-to-gif-converter.gif" width = "400" height = "225"/>
+  <img src="media_files/obstacle_avoidance_simulation_1.gif" width = "400" height = "225"/>
+  <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
+</p>
+
+as well as on hardware with an F450 quadrotor running on a Raspberry Pi 4.
+
+<p align="center">
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
+  <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "400" height = "600"/>
+  <!-- <img src="media_files/obstacle_avoidance_simulation_1.gif" width = "400" height = "225"/> -->
+  <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
+</p>
 
 
 ## 3. Use in Your Application

@@ -160,11 +160,11 @@ The ROS implementation exposes several parameters:
 
 |Parameter|Definition|Default|
 |---|---|---|
-|`enable_magnetometer`|If true, magnetometer readings are included in the state estimation update.|`false`|
-|`mag_calib/bias`|Bias of the magnetometer.|`[0,0,0]`|
-|`mag_calib/scale`|Scale of the magnetometer.|`[1,1,1]`|
-|`mag_calib/reference`|World frame reference vector of the magnetometer.|`[0,0,0]`|
-|`process_scale_factor`|'Fudge factor' to multiply by incoming gyro covariances.|1|
-|`gyro_bias_thresh`|Threshold of motion below which we may estimate gyro bias.|0.01 rad/s|
+|`GRID_W/GRID_H`|It defines the width/height of the world map being made for the trajectory planning .|`50.0 meters`|
+|`RES`|Resolution of the map.|`0.05 meters`|
+|`TAKEOFF_ALTITUDE`|It defines the altitude at which the drone will fly.|`1.5 meters`|
+|`drone_radius_cm_`|Drone's Radius in centimeters, required to inflate the actual map .|`35 cm`|
+|`lookahead_time_`| It is the amount of time in seconds , for which planner will look after that much seconds.|2 sec|
+|`max_vel_`|It is the maximum velocity drone can fly .|0.5 m/s|
+|`pipeline_step_duration_`|It is the main timer that determines how often the main loop checks the safety of the current trajectory and generates a new trajectory if required.|0.2 s|
 
-When using the node, you should remap `~imu` and `~field` to the appropriate topics. See `attitude_eskf.launch` for an example.

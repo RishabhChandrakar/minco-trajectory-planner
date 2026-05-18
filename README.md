@@ -103,7 +103,7 @@ All planning algorithms along with other key modules, such as mapping, sfc gener
 - __sfc_generation__: This module consists of  a Safe Flight Corridor (SFC) generation pipeline that converts obstacle-rich space into convex polytopes, using seed voxel extraction, rectangle expansion, QuickHull Algorithms . A dedicated C++ CorridorBuilder module then assembles and merges these polytopes along the A-star generated path to form a continuous safe corridor for trajectory optimization.
 
 <p align="center">
-  <img src="media_files/sfc_1_zoomed.png" width = "800" height = "450"/> 
+  <img src="media_files/sfc_1_zoomed.png" width = "800" height = "600"/> 
   <img src="media_files/long_sfc_1.png" width = "400" height = "225"/>
   <img src="media_files/long_sfc_2.png" width = "400" height = "225"/>
   <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->

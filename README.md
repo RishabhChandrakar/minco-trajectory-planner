@@ -133,6 +133,12 @@ as well as on hardware with an F450 quadrotor running on a Raspberry Pi 4.
   <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
 </p>
 
+<p align="center">
+  <!-- <img src="media_files/minco_trajectory_planner_hardware_1-ezgif.com-video-to-gif-converter.gif" width = "800" height = "225"/> -->
+  <img src="media_files/WhatsApp Video 2026-05-18 at 03.47.21(1).gif" width = "400" height = "400"/>
+  <!-- <img src="media_files/obstacle_avoidance_simulation_1.gif" width = "400" height = "225"/> -->
+  <!-- <img src="files/icra20_1.gif" width = "320" height = "180"/> -->
+</p>
 
 ## 3. Use in Your Application
 
